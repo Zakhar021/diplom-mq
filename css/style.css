@@ -340,7 +340,6 @@ a {
     text-align: center;
     margin-bottom: 20%;
 }
-
 .trend_description {
     box-sizing: border-box;
     border: 3px solid #877846;
@@ -725,7 +724,9 @@ sup {
         line-height: 14px;
     }
 
-
+    .content_down {
+        margin-top: 20px;
+    }
     .title_content_down {
         font-size: 18px;
         line-height: 29px;
@@ -846,6 +847,7 @@ sup {
     .content {
         padding: 45px 15px;
         margin: 0;
+        padding-bottom: 0;
     }
     .news-card {
         flex-direction: column;
@@ -873,13 +875,16 @@ sup {
         width: 100%;
         margin-left: 0;
         padding: 45px 15px;
+        padding-bottom: 0;
     }
     .sidebar-news-card-title-h3 {
         font-size: 14px;
         line-height: 18px;
     }
 
-
+    .content_down {
+        margin-top: 0;
+    }
     .title_content_down {
         font-size: 18px;
         line-height: 29px;
