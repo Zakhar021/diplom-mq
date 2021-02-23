@@ -1,0 +1,569 @@
+/* Основание */
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Header */
+.beginning {
+    background-image: url("../images/banner-bg.jpg");
+    background-color: #000;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    z-index: 0;
+}
+.beginning::after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.6;
+
+    z-index: -1;
+
+}
+.header {
+    box-sizing: border-box;
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    padding: 30px 15px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo {
+  width: 185px;
+}
+.menu {
+    display: flex;
+}
+.menu-item {
+    list-style-type: none;
+    margin-left: 35px;
+}
+.menu-item:nth-child(1) {
+    margin-left: 0;
+}
+.menu-item a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+.header-title-h1 h1 {
+    text-align: center;
+    font-size: 45px;
+    line-height: 75px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    padding-top: 100px;
+    padding-bottom: 140px;
+}
+
+/* Main content */
+.content {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 65px auto;
+    padding: 0 15px;
+}
+.content_center {
+    display: flex;
+    justify-content: space-between;
+}
+.news-card {
+    display: flex;
+}
+.card-image {
+    width: 381px;
+}
+.news-card-description {
+    margin-left: 30px;
+}
+.news-card-container {
+    display: flex;
+    margin-bottom: 15px;
+}
+.news-card-container>li {
+    list-style-type: none;
+}
+.tags {
+    font-size: 14px;
+    line-height: 14px;
+    color: #b59f5b;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+.news-card-title-container {
+    margin-bottom: 15px;
+}
+.news-card-title-h4 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.news-card-date-container {
+    margin-bottom: 45px;
+}
+.news-card-date {
+    font-size: 12px;
+    line-height: 40px;
+    color: #888888;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+.news-card-author {
+    font-size: 12px;
+    line-height: 40px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 15px;
+}
+.news-card-text {
+    font-size: 15px;
+    line-height: 22px;
+    color: #0f0d0e;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+.news-card-text:nth-child(n+2) {
+    margin-top: 20px;
+}
+.news-card:nth-child(n+2) {
+    margin-top: 60px;
+}
+
+/* Content up */
+.content_up {
+    margin-top: 60px;
+    margin-bottom: 65px;
+}
+.title_content_up {
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 42px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+.title_content_up::after {
+    content: "";
+    display: block;
+    width: 65px;
+    border-bottom: 4px solid #e1d9bd;
+    margin: 0 auto;
+}
+.trends {
+    display: flex;
+    justify-content: space-between;
+}
+.trend {
+    width: 24.70%;
+    height: 318px;
+    position: relative;
+    z-index: 0;
+    text-align: left;
+    position: relative;
+}
+.trend::after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.6;
+
+    z-index: -1;
+}
+.title_trend {
+    border: 3px solid #877846;
+    padding: 40px 34px;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    right: 20px;
+}
+.title_trend_h4 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+}
+.trend_1 {
+    background-image: url("../images/trend1.jpg");
+    background-color: #7ff54b;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+.trend_2 {
+    background-image: url("../images/trend2.jpg");
+    background-color: #dbb02f;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.trend_3 {
+    background-image: url("../images/trend3.jpg");
+    background-color: #37a26c;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.trend_4 {
+    background-image: url("../images/trend4.jpg");
+    background-color: #dbac1e;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Content down */
+.content_down {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 65px auto;
+    padding: 0 15px;
+}
+.title_content_down {
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 42px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+.title_content_down::after {
+    content: "";
+    display: block;
+    width: 65px;
+    border-bottom: 4px solid #e1d9bd;
+    margin: 0 auto;
+}
+.trends_list {
+    display: flex;
+    justify-content: space-between;
+}
+.trend_down {
+    list-style-type: none;
+    width: 30%;
+    position: relative;
+    height: 460px;
+    text-align: center;
+}
+.trend_description {
+    box-sizing: border-box;
+    border: 3px solid #877846;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 285px;
+    padding: 55px 20px 0px;
+}
+.title_trend_h5 {
+    text-align: left;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 15px;
+}
+.description {
+    text-align: left;
+    font-size: 15px;
+    line-height: 22px;
+    color: #0f0d0e;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 27px;
+}
+.trend_price {
+    display: flex;
+    justify-content: space-between;
+}
+.price1 {
+    text-align: left;
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration: line-through;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+.price2 {
+    font-size: 20px;
+    line-height: 20px;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+.button_price {
+    font-size: 14px;
+    line-height: 40px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    width: 140px;
+    height: 47px;
+    text-transform: uppercase;
+    background-color: #b59f5b;
+    border: 0;
+}
+
+
+
+/* Sidebar */
+.sidebar {
+    margin-left: 150px;
+}
+.sidebar-item {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.sidebar-item-title-h2 {
+    font-size: 14px;
+    line-height: 29px;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+.sidebar-item-title-h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    border-bottom: 4px solid #e1d9bd;
+    margin: 0 auto;
+}
+.sidebar-news-card {
+    display: flex;
+}
+.sidebar-news-card:nth-child(n+2) {
+    margin-top: 20px;
+}
+.sidebar-card-image {
+    width: 70px;
+}
+.sidebar-news-card-text {
+    text-align: left;
+    margin-left: 20px;
+}
+.sidebar-news-card-date {
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+.sidebar-news-card-title-h3 {
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.sidebar-news-search {
+    margin-top: 60px;
+}
+.form-search {
+    display: flex;
+}
+.input-search{
+    box-sizing: border-box;
+    font-size: 13px;
+    line-height: 40px;
+    color: #000000;
+    background-color: #f4f7f6;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    border: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: calc(100% - 48px);
+    height: 45px;
+}
+.button-search {
+    width: 48px;
+    height: 45px;
+    border: 0;
+    background-color: #b59f5b;
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px;
+}
+.input {
+    box-sizing: border-box;
+    font-size: 13px;
+    line-height: 40px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #f4f7f6;
+    border: 0;
+    height: 45px;
+}
+.button-email {
+    margin-top: 15px;
+    width: 100%;
+    height: 45px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 40px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    background-color: #b59f5b;
+    border: 0;
+
+}
+.sidebar-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.sidebar-tags-border {
+    list-style-type: none;
+    margin-right: 5px;
+}
+.sidebar-tags {
+    font-size: 12px;
+    line-height: 35px;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 3px solid #ededed;
+    padding: 3px 6px;
+}
+.sidebar-item>ul>li {
+    list-style-type: none;
+}
+.sidebar-item>ul>li>.topics {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    line-height: 47px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    border-bottom: 2px solid #ededed;
+}
+sup {
+    color: #b59f5b;
+}
+
+/* footer */
+.footer-item {
+    text-align: center;
+}
+.footer-item-sprites {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+.footer-item-sprites>li {
+    list-style-type: none;
+}
+.sprites {
+    display:block;
+    margin: 0 15px;
+    width: 20px;
+    height: 20px;
+}
+.twitter {
+    background-image: url("../svg/004-twitter.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px;
+}
+.pinterest {
+    background-image: url("../svg/001-pinterest.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px;
+}
+.facebook {
+    background-image: url("../svg/002-facebook-logo.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px;
+}
+.instagram {
+    background-image: url("../svg/005-instagram.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px;
+}
+.tumblr {
+    background-image: url("../svg/003-tumblr.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+}
+.footer-text {
+    font-size: 12px;
+    line-height: 12px;
+    color: #999999;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 75px;
+    padding-bottom: 40px;
+}
