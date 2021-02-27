@@ -332,7 +332,7 @@
                 </div>
                 <div class="sidebar-news-search">
                       <form class="form-search">
-                          <input type="field" placeholder="Найти..." class="input-search" required>
+                          <input type="search" placeholder="Найти..." class="input-search" required>
                           <button type="submit" class="button-search"></button>
                         </form>
                 </div>
@@ -505,5 +505,56 @@
         <p class="footer-text">Copyright&copy;2009–2019 City Blog LLC.</p>
     </div>
 </footer>
+<div class="popup">
+    <div class="popup_container">
+        <div class="popup_x"></div>
+        <h3 class="title_popup_h3">
+            Ваш фидбек
+        </h3>
+        <div>
+            <form action="#0" class="popup_form">
+                <div class="popup_select">
+                    <label class="select_group">
+                        <span class="select_label">Как часто вы заходите на сайт?</span>
+                        <select class="select">
+                          <option value="value1" selected>Каждый день</option>
+                          <option value="value2">Раз в неделю</option>
+                          <option value="value3">Раз в месяц</option>
+                          <option value="value4">Почти не захожу</option>
+                        </select>
+                      </label>
+                </div>
+                <div class="popup_radio">
+                    <span class="popup_title_radio">Вы подписаны на e-mail подписку?</span>
+                    <div class="radio_container">
+                        <div class="item_radio">
+                            <label for="radio_1">
+                                <input id="radio_1" type="radio" name="radio" value="1" checked>
+                                <span class="radio_text">Да</span>
+                            </label>
+                        </div>
+                        <div class="item_radio">
+                            <label for="radio_2">
+                                <input id="radio_2" type="radio" name="radio" value="2">
+                                <span class="radio_text">Нет</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup_text">
+                    <label>
+                        <span>Расскажите, какой контент вы хотели бы видеть на нашем сайте ?</span>
+                        <textarea class="popup_form_text" placeholder="Может, больше рецептов?"></textarea>
+                    </label>
+                </div>
+                <div>
+                    <button class="popup_button">
+                        Отправить
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>
