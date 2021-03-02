@@ -646,6 +646,25 @@ sup {
     background-position: center right;
     background-size: 20px;
 }
+.title_popup_h3 {
+    box-sizing: content-box;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    line-height: 42px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    height: 7%;
+    margin-bottom: 10%;
+}
+.title_popup_h3::after {
+    content: "";
+    display: block;
+    width: 65px;
+    border-bottom: 4px solid #e1d9bd;
+    margin: 0 auto;
+}
 .popup_container {
     box-sizing: border-box;
     width: 350px;
@@ -655,26 +674,16 @@ sup {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px 30px 40px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
 
     background-color: #fff;
     z-index: 5;
 }
-.title_popup_h3 {
-    text-transform: uppercase;
-    color: #000000;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 20px;
-    line-height: 42px;
-    font-weight: 700;
-    font-family: "Open Sans", sans-serif;
-}
-.title_popup_h3::after {
-    content: "";
-    display: block;
-    width: 65px;
-    border-bottom: 4px solid #e1d9bd;
-    margin: 0 auto;
+.container_form {
+    height: 88%;
 }
 .select {
     box-sizing: border-box;
@@ -690,7 +699,7 @@ sup {
     background-color: #f9f9f9;
 
     font-size: 14px;
-    font-family: Arial,sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: #333333;
 
     -webkit-appearance:none;
@@ -701,10 +710,6 @@ sup {
     background-position: right 10px  center;
     background-size: 7px;
 }
-
-
-
-
 .popup_radio {
     margin-top: 30px;
 }
@@ -721,6 +726,9 @@ sup {
     height:1px;
     width:1px;
 }
+.radio_btn2 {
+    margin-left: 10px;
+}
 .radio_text::before {
     content: "";
     display: inline-block;
@@ -736,30 +744,32 @@ sup {
     background-position: center center;
     background-size:18px;
 }
-.radio_1:checked ~ .radio_text::before {
+input[type=radio]:checked + .radio_text::before {
     background-image: url("../svg/form-circle.svg");
 }
-
-
-
-
 .popup_text {
     margin-top: 30px;
+
 }
 .popup_form_text {
+    box-sizing: border-box;
     margin-top: 10px;
     max-width: 100%;
     min-width: 100%;
-    max-height: 70px;
-    min-height: 70px;
+    height: 140px;
     background-color: #f3f7f6;
     border: 0;
     padding: 20px 10px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
 }
 .popup_button {
     margin-top: 25px;
     width: 100%;
-    height: 45px;
+
+
     text-transform: uppercase;
     font-size: 14px;
     line-height: 40px;
@@ -1060,5 +1070,29 @@ sup {
     .footer-item-sprites {
         max-width: 100%;
     }
+
+    .title_popup_h3 {
+        font-size: 13px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+    .popup_container {
+        width: 290px;
+        height: 415px;
+    }
+    .select_label, .popup_title_radio, .popup_title_text {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .popup_radio, .popup_text {
+        margin-top: 14px;
+    }
+    .popup_form_text {
+        height: 70px;
+    }
+    .popup_button {
+        margin-top: 10px;
+    }
+
 
 }

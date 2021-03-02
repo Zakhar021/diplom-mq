@@ -511,7 +511,7 @@
         <h3 class="title_popup_h3">
             Ваш фидбек
         </h3>
-        <div>
+        <div class="container_form">
             <form action="#0" class="popup_form">
                 <div class="popup_select">
                     <label class="select_group">
@@ -527,27 +527,23 @@
                 <div class="popup_radio">
                     <span class="popup_title_radio">Вы подписаны на e-mail подписку?</span>
                     <div class="radio_container">
-                        <div class="item_radio">
-                            <label for="radio_1">
-                                <input id="radio_1" type="radio" name="radio" value="1" checked>
-                                <span class="radio_text">Да</span>
-                            </label>
-                        </div>
-                        <div class="item_radio">
-                            <label for="radio_2">
-                                <input id="radio_2" type="radio" name="radio" value="2">
-                                <span class="radio_text">Нет</span>
-                            </label>
-                        </div>
+                        <label for="radio_1" class="radio_btn1">
+                            <input id="radio_1" type="radio" name="radio" value="1" checked>
+                            <span class="radio_text">Да</span>
+                        </label>
+                        <label for="radio_2" class="radio_btn2">
+                            <input id="radio_2" type="radio" name="radio" value="2">
+                            <span class="radio_text">Нет</span>
+                        </label>
                     </div>
                 </div>
                 <div class="popup_text">
                     <label>
-                        <span>Расскажите, какой контент вы хотели бы видеть на нашем сайте ?</span>
+                        <span class="popup_title_text">Расскажите, какой контент вы хотели бы видеть на нашем сайте ?</span>
                         <textarea class="popup_form_text" placeholder="Может, больше рецептов?"></textarea>
                     </label>
                 </div>
-                <div>
+                <div class="container_form_btn">
                     <button class="popup_button">
                         Отправить
                     </button>
